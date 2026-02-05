@@ -1,0 +1,119 @@
+JAVASCRIPT
+
+1.
+
+/* let int_panjang = parseInt(prompt("Masukkan Nilai Panjang: "));
+let int_lebar = parseInt(prompt("Masukkan Nilai Lebar: "));
+let int_tinggi = parseInt(prompt("Masukkan Nilai Tinggi: "));
+
+let int_volume = int_panjang * int_lebar * int_tinggi;
+
+console.log("Volume Balok adalah " + int_volume + "m³");
+*/
+
+2.
+
+/*let int_jariJari = parseInt(prompt("Masukkan Nilai Jari-jari: "));
+
+let int_volume = (4 / 3) * 3.14 * int_jariJari * int_jariJari * int_jariJari;
+
+console.log("Volume Bola adalah " + int_volume + " m³");
+*/
+
+3.
+
+/*
+let int_jariJari = parseInt(prompt("Masukkan Nilai Jari-jari: "));
+let int_tinggi = parseInt(prompt("Masukkan Nilai tinggi: "));
+
+let int_volume = 3.14 * int_jariJari * int_jariJari * int_tinggi;
+
+console.log("Volume Tabung adalah " + int_volume + " m³");
+*/
+
+4.
+
+/*
+let int_nilaiA = parseInt(prompt("Masukkan Nilai A: "));
+let int_nilaiB = parseInt(prompt("Masukkan Nilai B: "));
+let int_nilaiC = parseInt(prompt("Masukkan Nilai C: "));
+
+let int_diskriminan = (int_nilaiB * int_nilaiB) - (4 * int_nilaiA * int_nilaiC);
+
+console.log("Hasil Kalkulasi Diskriminan adalah " + int_diskriminan);
+
+5.
+
+*/
+
+let int_longTitikA = parseInt(prompt("Masukkan Nilai Longitude Titik A: "));
+let int_latitudeTitikA = parseInt(prompt("Masukkan Nilai Latitude Titik A: "));
+
+let int_longTitikB = parseInt(prompt("Masukkan Nilai Longitude Titik B: "));
+let int_latitudeTitikB = parseInt(prompt("Masukkan Nilai Latitude Titik B: "));
+
+let int_distCalc =
+    (int_longTitikB - int_longTitikA) * (int_longTitikB - int_longTitikA) +
+    (int_latitudeTitikB - int_latitudeTitikA) * (int_latitudeTitikB - int_latitudeTitikA);
+
+console.log("Hasil kalkulasi jarak (tanpa akar) adalah " + int_distCalc);
+
+
+PHP:
+<?php
+
+1.
+/*
+$int_panjang = readline("Masukkan Nilai Panjang: ");
+$int_lebar = readline("Masukkan Nilai Lebar: ");
+$int_tinggi = readline("Masukkan Nilai Tinggi: ");
+
+$int_volume = $int_panjang * $int_lebar * $int_tinggi;
+
+echo("Volume Balok adalah $int_volume m³");
+*/
+
+2.
+/*
+$int_jariJari = readline("Masukkan Nilai Jari-Jari: ");
+$int_volume = (4 / 3) * 3.14 * $int_jariJari * $int_jariJari * $int_jariJari;
+echo("Volume Bola adalah $int_volume m³");
+*/
+
+3.
+/*
+$int_jariJari = readline("Masukkan Nilai Jari-jari: ");
+$int_tinggi   = readline("Masukkan Nilai Tinggi: ");
+
+$int_volume = 3.14 * $int_jariJari * $int_jariJari * $int_tinggi;
+
+echo("Volume Tabung adalah $int_volume m³");
+*/
+
+4.
+/*
+$int_nilaiA = readline("Masukkan Nilai A: ");
+$int_nilaiB = readline("Masukkan Nilai B: ");
+$int_nilaiC = readline("Masukkan Nilai C: ");
+
+$int_diskriminan = ($int_nilaiB * $int_nilaiB) - (4 * $int_nilaiA * $int_nilaiC);
+
+echo("Hasil Kalkulasi Diskriminan adalah $int_diskriminan");
+
+5.*/
+
+
+$int_longTitikA = readline("Masukkan Nilai Longitude Titik A: ");
+$int_latitudeTitikA = readline("Masukkan Nilai Latitude Titik A: ");
+
+$int_longTitikB = readline("Masukkan Nilai Longitude Titik B: ");
+$int_latitudeTitikB = readline("Masukkan Nilai Latitude Titik B: ");
+
+$int_distCalc =
+    ($int_longTitikB - $int_longTitikA) * ($int_longTitikB - $int_longTitikA) +
+    ($int_latitudeTitikB - $int_latitudeTitikA) * ($int_latitudeTitikB - $int_latitudeTitikA);
+
+echo("Hasil kalkulasi jarak (tanpa akar) adalah $int_distCalc");
+
+
+?>
