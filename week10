@@ -1,0 +1,320 @@
+JAVASCRIPT:
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// Input angka
+/*
+let angka = parseInt(prompt("Masukkan sebuah angka:"));
+
+// 
+if (angka % 2 === 0) {
+    console.log("Angka " + angka + " adalah GENAP");
+} else {
+    console.log("Angka " + angka + " adalah GANJIL");
+}
+*/
+
+
+/*
+let umur = parseInt(prompt("Masukkan umur Anda:"));
+
+// Validasi input
+if (umur < 0) {
+    console.log("Umur tidak boleh bernilai negatif");
+} else if (umur >= 0 && umur <= 1) {
+    console.log("Bayi");
+} else if (umur >= 2 && umur <= 3) {
+    console.log("Batita");
+} else if (umur >= 4 && umur <= 5) {
+    console.log("Balita");
+} else if (umur >= 6 && umur <= 12) {
+    console.log("Anak-anak");
+} else if (umur >= 13 && umur <= 17) {
+    console.log("Remaja");
+} else if (umur >= 18 && umur <= 21) {
+    console.log("ABG");
+} else if (umur >= 22 && umur <= 30) {
+    console.log("Pra Dewasa");
+} else if (umur >= 31 && umur <= 50) {
+    console.log("Dewasa");
+} else if (umur >= 51 && umur <= 70) {
+    console.log("Pra Lansia");
+} else {
+    console.log("Lansia");
+}
+
+*/
+/*
+// Tampilkan menu konversi
+console.log("MENU KONVERSI SUHU");
+console.log("1. Celcius ke Fahrenheit");
+console.log("2. Celcius ke Kelvin");
+console.log("3. Fahrenheit ke Celcius");
+console.log("4. Fahrenheit ke Kelvin");
+console.log("5. Kelvin ke Celcius");
+console.log("6. Kelvin ke Fahrenheit");
+
+// Input menu
+let menu = parseInt(prompt("Masukkan nomor menu yang ingin dikonversi (1-6):"));
+
+let suhu;
+let hasil;
+
+// Proses konversi
+if (menu == 1) {
+    suhu = parseInt(prompt("Masukkan suhu Celcius:"));
+    hasil = (suhu * 9 / 5) + 32;
+    console.log("Hasil = " + hasil + " Fahrenheit");
+
+} else if (menu == 2) {
+    suhu = parseInt(prompt("Masukkan suhu Celcius:"));
+    hasil = suhu + 273;
+    console.log("Hasil = " + hasil + " Kelvin");
+
+} else if (menu == 3) {
+    suhu = parseInt(prompt("Masukkan suhu Fahrenheit:"));
+    hasil = (suhu - 32) * 5 / 9;
+    console.log("Hasil = " + hasil + " Celcius");
+
+} else if (menu == 4) {
+    suhu = parseInt(prompt("Masukkan suhu Fahrenheit:"));
+    hasil = (suhu - 32) * 5 / 9 + 273;
+    console.log("Hasil = " + hasil + " Kelvin");
+
+} else if (menu == 5) {
+    suhu = parseInt(prompt("Masukkan suhu Kelvin:"));
+    hasil = suhu - 273;
+    console.log("Hasil = " + hasil + " Celcius");
+
+} else if (menu == 6) {
+    suhu = parseInt(prompt("Masukkan suhu Kelvin:"));
+    hasil = (suhu - 273) * 9 / 5 + 32;
+    console.log("Hasil = " + hasil + " Fahrenheit");
+
+} else {
+    console.log("Menu tidak valid");
+}
+*/
+/*
+// Input sisi segitiga
+let A = parseInt(prompt("Masukkan sisi A:"));
+let B = parseInt(prompt("Masukkan sisi B:"));
+let C = parseInt(prompt("Masukkan sisi C:"));
+
+// Cek bukan segitiga
+if (A <= 0 || B <= 0 || C <= 0) {
+    console.log("Bukan Segitiga");
+
+} else if (A + B <= C || A + C <= B || B + C <= A) {
+    console.log("Bukan Segitiga");
+
+}
+// Segitiga sama sisi
+else if (A == B && B == C) {
+    console.log("Segitiga Sama Sisi");
+
+}
+// Segitiga siku-siku (bonus)
+else if (
+    A * A == B * B + C * C ||
+    B * B == A * A + C * C ||
+    C * C == A * A + B * B
+) {
+    console.log("Segitiga Siku-siku");
+
+}
+// Segitiga sama kaki
+else if (A == B || A == C || B == C) {
+    console.log("Segitiga Sama Kaki");
+
+}
+// Segitiga sembarang
+else {
+    console.log("Segitiga Sembarang");
+}
+*/
+
+// Input nilai A, B, dan C
+let A = parseInt(prompt("Masukkan nilai A: "));
+let B = parseInt(prompt("Masukkan nilai B: "));
+let C = parseInt(prompt("Masukkan nilai C: "));
+
+let D;
+
+// Proses pengecekan
+if (A == 0) {
+    console.log("Bukan Persamaan Kuadrat");
+
+} else {
+    // Hitung diskriminan
+    D = (B * B) - (4 * A * C);
+
+    // Filtering jenis akar
+    if (D > 0) {
+        console.log("Merupakan Akar Berbeda");
+        console.log("Nilai Diskriminan = " + D);
+
+    } else if (D == 0) {
+        console.log("Merupakan Akar Kembar");
+        console.log("Nilai Diskriminan = " + D);
+
+    } else {
+        console.log("Merupakan Akar Imajiner");
+        console.log("Nilai Diskriminan = " + D);
+    }
+}
+
+
+
+
+PHP:
+<?php
+/*
+//1.
+
+$angka = readline("Masukkan sebuah angka: ");
+
+if ($angka % 2 == 0) {
+    echo "Angka $angka adalah GENAP";
+} else {
+    echo "Angka $angka adalah GANJIL";
+}
+*/
+
+/*
+//2. 
+$umur = readline("Masukkan umur Anda: ");
+
+if ($umur < 0) {
+    echo "Umur tidak boleh bernilai negatif";
+} else if ($umur <= 1) {
+    echo "Bayi";
+} else if ($umur <= 3) {
+    echo "Batita";
+} else if ($umur <= 5) {
+    echo "Balita";
+} else if ($umur <= 12) {
+    echo "Anak-anak";
+} else if ($umur <= 17) {
+    echo "Remaja";
+} else if ($umur <= 21) {
+    echo "ABG";
+} else if ($umur <= 30) {
+    echo "Pra Dewasa";
+} else if ($umur <= 50) {
+    echo "Dewasa";
+} else if ($umur <= 70) {
+    echo "Pra Lansia";
+} else {
+    echo "Lansia";
+}
+*/
+
+/*
+//3.
+echo "MENU KONVERSI SUHU\n";
+echo "1. Celcius ke Fahrenheit\n";
+echo "2. Celcius ke Kelvin\n";
+echo "3. Fahrenheit ke Celcius\n";
+echo "4. Fahrenheit ke Kelvin\n";
+echo "5. Kelvin ke Celcius\n";
+echo "6. Kelvin ke Fahrenheit\n";
+
+$menu = readline("Masukkan nomor menu (1-6): ");
+
+if ($menu == 1) {
+    $suhu = readline("Masukkan suhu Celcius: ");
+    $hasil = ($suhu * 9 / 5) + 32;
+    echo "Hasil = $hasil Fahrenheit";
+
+} else if ($menu == 2) {
+    $suhu = readline("Masukkan suhu Celcius: ");
+    $hasil = $suhu + 273;
+    echo "Hasil = $hasil Kelvin";
+
+} else if ($menu == 3) {
+    $suhu = readline("Masukkan suhu Fahrenheit: ");
+    $hasil = ($suhu - 32) * 5 / 9;
+    echo "Hasil = $hasil Celcius";
+
+} else if ($menu == 4) {
+    $suhu = readline("Masukkan suhu Fahrenheit: ");
+    $hasil = ($suhu - 32) * 5 / 9 + 273;
+    echo "Hasil = $hasil Kelvin";
+
+} else if ($menu == 5) {
+    $suhu = readline("Masukkan suhu Kelvin: ");
+    $hasil = $suhu - 273;
+    echo "Hasil = $hasil Celcius";
+
+} else if ($menu == 6) {
+    $suhu = readline("Masukkan suhu Kelvin: ");
+    $hasil = ($suhu - 273) * 9 / 5 + 32;
+    echo "Hasil = $hasil Fahrenheit";
+
+} else {
+    echo "Menu tidak valid";
+}
+*/
+
+/*
+//4.
+$A = readline("Masukkan sisi A: ");
+$B = readline("Masukkan sisi B: ");
+$C = readline("Masukkan sisi C: ");
+
+if ($A <= 0 || $B <= 0 || $C <= 0) {
+    echo "Bukan Segitiga";
+
+} else if ($A + $B <= $C || $A + $C <= $B || $B + $C <= $A) {
+    echo "Bukan Segitiga";
+
+} else if ($A == $B && $B == $C) {
+    echo "Segitiga Sama Sisi";
+
+} else if (
+    $A*$A == $B*$B + $C*$C ||
+    $B*$B == $A*$A + $C*$C ||
+    $C*$C == $A*$A + $B*$B
+) {
+    echo "Segitiga Siku-siku";
+
+} else if ($A == $B || $A == $C || $B == $C) {
+    echo "Segitiga Sama Kaki";
+
+} else {
+    echo "Segitiga Sembarang";
+}
+*/
+/*
+//5.
+$A = readline("Masukkan sisi A: ");
+$B = readline("Masukkan sisi B: ");
+$C = readline("Masukkan sisi C: ");
+
+if ($A <= 0 || $B <= 0 || $C <= 0) {
+    echo "Bukan Segitiga";
+
+} else if ($A + $B <= $C || $A + $C <= $B || $B + $C <= $A) {
+    echo "Bukan Segitiga";
+
+} else if ($A == $B && $B == $C) {
+    echo "Segitiga Sama Sisi";
+
+} else if (
+    $A*$A == $B*$B + $C*$C ||
+    $B*$B == $A*$A + $C*$C ||
+    $C*$C == $A*$A + $B*$B
+) {
+    echo "Segitiga Siku-siku";
+
+} else if ($A == $B || $A == $C || $B == $C) {
+    echo "Segitiga Sama Kaki";
+
+} else {
+    echo "Segitiga Sembarang";
+}
+*/
+
+
+?>
