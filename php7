@@ -1,0 +1,76 @@
+<?php
+
+class LoginSystem {
+
+    private $akun = [
+        [
+            "username" => "Owner",
+            "email" => "owner@mail.com",
+            "password" => "owner123",
+            "role" => "Owner"
+        ],
+        [
+            "username" => "Admin",
+            "email" => "admin@mail.com",
+            "password" => "admin123",
+            "role" => "Admin"
+        ],
+        [
+            "username" => "Guest",
+            "email" => "guest@mail.com",
+            "password" => "guest123",
+            "role" => "Guest"
+        ]
+    ];
+
+    // Function Input Login
+    public function inputLogin(){
+
+        echo "-----------------------\n";
+        echo "|      Ilham Iwan     |\n";
+        echo "|       Bintaro       |\n";
+        echo "-----------------------\n";
+        echo "| Basic Login Systems |\n";
+        echo "-----------------------\n";
+
+        while(true){
+
+            $userInput = readline("Enter Email/Username: ");
+            $passInput = readline("Enter Password: ");
+
+            $result = $this->validasi($userInput, $passInput);
+
+            if($result){
+                echo "Login Successful\n";
+                echo "Role Anda: " . $result . "\n";
+                break;
+            } else {
+                echo "Email/Username or Password Wrong, Please try again\n";
+            }
+        }
+    }
+
+    // Function Validasi Login
+    private function validasi($userInput, $passInput){
+
+        foreach($this->akun as $data){
+
+            if(
+                ($data["username"] == $userInput ||
+                 $data["email"] == $userInput)
+                 &&
+                 $data["password"] == $passInput
+            ){
+                return $data["role"]; // return role
+            }
+        }
+
+        return false;
+    }
+}
+
+// Run Program
+$login = new LoginSystem();
+$login->inputLogin();
+
+?>
